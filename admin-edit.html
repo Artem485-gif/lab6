@@ -19,6 +19,11 @@
     </header>
 
     <main>
+        <nav class="breadcrumbs" aria-label="Навігаційний ланцюжок">
+            <a href="index.html">Головна</a>
+            <a href="admin.html">Адміністрування</a>
+            <span>Редагування</span>
+        </nav>
         <section aria-labelledby="edit-heading">
             <h2 id="edit-heading">Дані фільму або серіалу</h2>
 
@@ -90,8 +95,8 @@
                     <p>
                         <label for="item-stock">
                             <input type="checkbox" id="item-stock"
-                                name="inStock" value="true">
-                            Є в наявності
+                                name="inStock" value="true" checked>
+                            Переглянуто
                         </label>
                     </p>
                 </fieldset>
@@ -104,7 +109,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <p><a href="admin.html">Повернутися до адміністрування</a></p>
         <p><a href="index.html">Повернутися до каталогу</a></p>
     </footer>
@@ -204,6 +209,8 @@
     </script>
 </body>
 </html>
+
+
 
 
 

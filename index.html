@@ -25,6 +25,7 @@
 
             <nav class="top-nav" aria-label="Основна навігація">
     <ul>
+<li><a href="admin.html">Адміністрування</a></li>
         <li><a href="index.html" class="active" aria-current="page">Головна</a></li>
         <li><a href="about.html">Про проєкт</a></li>
     </ul>
@@ -41,8 +42,9 @@
             <!-- Заголовок -->
             <section class="page-title-block">
                 <h1 class="main-title">Фільми та серіали</h1>
-                <p class="breadcrumbs">
-                </p>
+                                <nav class="breadcrumbs" aria-label="Навігаційний ланцюжок">
+                    <span>Головна</span>
+                </nav>
             </section>
 
             <div class="content-wrapper">
@@ -52,33 +54,41 @@
 
                     <h2>---ФІЛЬТРИ---</h2>
 
-                    <ul class="sidebar-menu">
+                                        <fieldset class="category-filter">
+                        <legend>Категорії фільмів</legend>
 
-                        <li class="active-category">
-                            <a href="#catalog">Усі фільми</a>
-                        </li>
+                        <div class="category-chips">
+                            <label class="category-chip">
+                                <input type="checkbox" name="genre" value="all" checked>
+                                <span>Усі фільми</span>
+                            </label>
 
-                        <li>
-                            <a href="#movie-1">Фантастика</a>
-                        </li>
+                            <label class="category-chip">
+                                <input type="checkbox" name="genre" value="фантастика">
+                                <span>Фантастика</span>
+                            </label>
 
-                        <li>
-                            <a href="#movie-2">Трилер</a>
-                        </li>
+                            <label class="category-chip">
+                                <input type="checkbox" name="genre" value="трилер">
+                                <span>Трилер</span>
+                            </label>
 
-                        <li>
-                            <a href="#movie-3">Драма</a>
-                        </li>
+                            <label class="category-chip">
+                                <input type="checkbox" name="genre" value="драма">
+                                <span>Драма</span>
+                            </label>
 
-                        <li>
-                            <a href="#movie-5">Бойовик</a>
-                        </li>
+                            <label class="category-chip">
+                                <input type="checkbox" name="genre" value="бойовик">
+                                <span>Бойовик</span>
+                            </label>
 
-                        <li>
-                            <a href="#movie-6">Комедія</a>
-                        </li>
-
-                    </ul>
+                            <label class="category-chip">
+                                <input type="checkbox" name="genre" value="комедія">
+                                <span>Комедія</span>
+                            </label>
+                        </div>
+                    </fieldset>
 
                 </aside>
 
@@ -292,13 +302,13 @@
 
                             <figure>
                                 <img
-                                    s<img src="images/5.jpg"
+                                    src="images/5.jpg"
                                     srcset="images/5.jpg 600w"
                                     sizes="(max-width: 600px) 100vw, 600px"
                                     alt="Постер фільму Гладіатор"
                                     title="Гладіатор"
                                     loading="lazy"
-                                >
+>
 
                                 <figcaption>
                                     Постер фільму «Гладіатор»
@@ -414,5 +424,9 @@
 
     </footer>
 
+    <script src="js/filters.js" defer></script>
 </body>
 </html>
+
+
+
